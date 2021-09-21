@@ -13,13 +13,40 @@ body > header {
   background-color: var(--noir);
 }/* body > header { */
 
-body > header figure {
-  margin: 0.3125rem 0 0 1.25rem;
-  width: 7rem;
-}/* body > header figure { */
-
-
 main { margin: calc(var(--gouttiere) / 2) var(--gouttiere) var(--gouttiere) var(--gouttiere); }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('../images/svg/mustang-logo.svg');
+  background-repeat: no-repeat;
+  background-size: 7rem;
+  background-position: 1.25rem 0.3125rem;
+  background-color: var(--noir);
+
+  font-family: 'Interface';
+  font-size: 1.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--blanc);
+}/* nav { */
+
+nav a:link, nav a:visited, nav a:active {
+  display: block;
+  padding: 1.5rem;
+  opacity: 1;
+  color: var(--blanc);
+  transition: 0.25s linear opacity;
+}/* nav a:link, nav a:visited, nav a:active { */
+
+nav a:hover { opacity: 0.625; }
 
 p { margin: 0 0 calc(var(--gouttiere) / 2) 0; }
 
@@ -27,7 +54,12 @@ p { margin: 0 0 calc(var(--gouttiere) / 2) 0; }
 
 
 
-#menu-ouvrir {
+.logo {
+  margin: 0.3125rem 0 0 1.25rem;
+  width: 7rem;
+}/* .logo { */
+
+.button {
   margin: 0;
   padding: 0;
   width: 3.75rem;
@@ -35,4 +67,14 @@ p { margin: 0 0 calc(var(--gouttiere) / 2) 0; }
 
   background-color: transparent;
   border: none;
-}/* #menu-ouvrir */
+}/* .button */
+
+
+
+
+
+#menu-fermer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}/* #menu-fermer { */
