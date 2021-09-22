@@ -22,8 +22,8 @@ body > header {
 body > header figure {
   margin: 0;
   padding: 0;
-  width: 3.75rem;
-  height: 3.75rem;
+  margin: 0.3125rem 0 0 1.25rem;
+  width: 7rem;
 
   background-color: transparent;
   border: none;
@@ -86,10 +86,15 @@ p { margin: 0 0 calc(var(--gouttiere) / 2) 0; }
 
 */
 
-.logo {
-  margin: 0.3125rem 0 0 1.25rem;
-  width: 7rem;
-}/* .logo { */
+.button {
+  margin: 0;
+  padding: 0;
+  width: 3.75rem;
+  height: 3.75rem;
+
+  background-color: transparent;
+  border: none;
+}/* .button */
 
 
 
