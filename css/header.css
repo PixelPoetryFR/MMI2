@@ -116,3 +116,5 @@ p { margin: 0 0 calc(var(--gouttiere) / 2) 0; }
   top: 0;
   right: 0;
 }/* #menu-fermer { */
+
+#navigation { display: none; }

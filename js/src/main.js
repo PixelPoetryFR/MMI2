@@ -81,12 +81,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // ---------- MENU mobile
   (function () {
 
-    // On ne va activer cette fonctionnalité que pour le mobile et la tablette verticale
+    // Cette fonctionnalité ne concerne que le smartphone et la tablette verticale
     if (!device.desktop) {
     
       const btn_open    = document.getElementById('menu-ouvrir');
       const btn_close   = document.getElementById('menu-fermer');
-      const navigation  = document.querySelector('body > header > nav');
   
       btn_open.addEventListener('click', function () {
         FadeIn('navigation');
