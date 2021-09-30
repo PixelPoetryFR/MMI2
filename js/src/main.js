@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.onresize = Device;
 
   }());
+  // ---------- /DETECTION device
 
 
 
@@ -72,33 +73,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  
 
 
 
 
 
-
-
-
-
-
-  // ---------- DETECTION IE
+  // ---------- MENU mobile
   (function () {
 
-    let ua, msie, is_ie;
-    ua            = window.navigator.userAgent;
-    msie          = ua.indexOf("MSIE ");
+    // On ne va activer cette fonctionnalité que pour le mobile et la tablette verticale
+    if (!device.desktop) {
+    
+      const btn_open    = document.getElementById('menu-ouvrir');
+      const btn_close   = document.getElementById('menu-fermer');
+      const navigation  = document.querySelector('body > header > nav');
+  
+      btn_open.addEventListener('click', function () {
+        FadeIn('navigation');
+      }, false);
+  
+      btn_close.addEventListener('click', function () {
+        FadeOut('navigation');
+      }, false);
 
-    is_ie         = (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./));
-
-    console.log(`is_ie = ${is_ie}`);
+    };// if (!device.desktop) {
 
   })();
-  // ---------- /DETECTION IE
-
-
-
+  // ---------- /MENU mobile
 
 
 
