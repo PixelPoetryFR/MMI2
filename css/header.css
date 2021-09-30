@@ -96,6 +96,9 @@ p { margin: 0 0 calc(var(--gouttiere) / 2) 0; }
   border: none;
 }/* .button */
 
+.button.is-focused, .button:focus { border: none; }
+.button.is-focused:not(:active), .button:focus:not(:active) { box-shadow: none; }
+
 
 
 
@@ -122,4 +125,9 @@ p { margin: 0 0 calc(var(--gouttiere) / 2) 0; }
   right: 0;
 }/* #menu-fermer { */
 
-#navigation { display: none; }
+#navigation {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}/* #navigation { */
