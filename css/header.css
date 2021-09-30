@@ -131,3 +131,73 @@ p { margin: 0 0 calc(var(--gouttiere) / 2) 0; }
   top: 0;
   left: 0;
 }/* #navigation { */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+------------------------------------------------------------ MQ
+
+*/
+
+@media screen and (min-width: 64rem) {
+
+  body > header { height: 7.5rem; }
+
+  body > header figure {
+    width: 12.25rem;
+    margin: 1rem 0 0 1rem;
+  }/* body > header figure { */
+
+  body > header .wrapper {
+    position: relative;
+    width: 64rem;
+    margin: 0 auto;
+  }/* body > header .wrapper { */
+
+  nav {
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+
+    background-color: transparent;
+    background-image: none;
+
+    font-size: 0.875rem;
+    font-weight: bold;
+  }/* nav { */
+
+  main {
+    width: 64rem;
+    margin: var(--gouttiere) auto;
+  }
+
+  #navigation {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: auto;
+    height: 4.375rem;
+    width: 35rem;
+    transform: translateY(-50%);
+  }/* #navigation { */
+
+  #navigation ul { display: flex; }
+
+  #menu-fermer, #menu-ouvrir { display: none; }
+
+}/* @media screen and (min-width: 64rem) { */
